@@ -34,10 +34,9 @@ class CardDeck:  # inherits from object
                 self._cards.append(card)
 
 
-    @property
     def cards(self):
         return self._cards
-
+    cards = property(cards)  # same as using @property
 
 
     @property  # decorator

@@ -15,11 +15,15 @@ class President():
 
         return d
 
+    def hello(self):
+        print(f"Hello from {self.first_name} {self.last_name}")
+
     def _get_data(self, index):
-        with open("../DATA/presidents.txt") as pfile:
+        with open("DATA/presidents.txt") as pfile:
             for line in pfile:
                 flds = line.rstrip().split(":")
                 if int(flds[0]) == int(index):
+                    self._term = index
                     self._lname = flds[1]
 
                     self._fname = flds[2]
@@ -38,6 +42,10 @@ class President():
                     break
             else:
                 raise ValueError("Invalid term number")
+
+    @property
+    def term(self):
+        return self._term
 
     @property
     def last_name(self):
@@ -74,3 +82,10 @@ class President():
     @property
     def party(self):
         return self._party
+
+    @party.deleter
+    def party(self):
+        del self._party
+
+    def __str__(self):
+        return f"President <{self.first_name} {self.last_name}:{self.term}>"
