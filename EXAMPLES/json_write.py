@@ -18,6 +18,7 @@ george = [
     },
     {
         'spam': 'ham',
+        # 'pancakes': {'a', 'b', 'c', 'c', 'c'},
         'eggs': [1.2, 2.3, 3.4],
         'toast': {'a': 5, 'm': 9, 'c': 4},
     }

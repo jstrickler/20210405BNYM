@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-
+from pprint import pprint
 import json
 
 with open('../DATA/solar.json') as solar_in:  # <1>
@@ -8,7 +8,8 @@ with open('../DATA/solar.json') as solar_in:  # <1>
 # json.loads(STRING)
 # json.load(FILE_OBJECT)
 
-# print(solar)
+# pprint(solar)
+# exit()
 
 print(solar['innerplanets'])  # <3>
 print('*' * 60)
@@ -22,3 +23,6 @@ for group in solar:
     if group.endswith('planets'):
         for planet in solar[group]:
             print(planet['name'])
+            if planet['moons']:
+                for moon in planet['moons']:
+                    print(f"   {moon}")

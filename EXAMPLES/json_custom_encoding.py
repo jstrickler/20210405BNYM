@@ -3,7 +3,6 @@
 import json
 from datetime import date
 
-
 class Parrot():  # <1>
     def __init__(self, name, color):
         self._name = name
@@ -24,10 +23,10 @@ parrots = [  # <3>
     Parrot('Roger', 'red'),
 ]
 
-
 def encode(obj):  # <4>
     if isinstance(obj, date):  # <5>
-        return obj.ctime()  # <6>
+        #return obj.ctime()  # <6>
+        return obj.month, obj.day, obj.year
     elif isinstance(obj, Parrot):  # <7>
         return {'name': obj.name, 'color': obj.color}  # <8>
     return obj  # <9>
