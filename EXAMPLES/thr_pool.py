@@ -1,9 +1,8 @@
 #!/usr/bin/env python
-
 import random
 from multiprocessing.dummy import Pool # <1>
 
-POOL_SIZE = 30 # <2>
+POOL_SIZE = 32 # <2>
 
 with open('../DATA/words.txt') as words_in:
     WORDS = [w.strip() for w in words_in] # <3>
@@ -11,11 +10,11 @@ with open('../DATA/words.txt') as words_in:
 random.shuffle(WORDS) # <4>
 
 def my_task(word):  # <5>
-    return word.upper()
+    return word.upper()  # not faster unless task involves I/O
 
-tpool = Pool(POOL_SIZE) # <6>
+thread_pool = Pool(POOL_SIZE) # <6>
 
-WORD_LIST = tpool.map(my_task, WORDS) # <7>
+WORD_LIST = thread_pool.map(my_task, WORDS) # <7>
 
 print(WORD_LIST[:20])  # <8>
 

@@ -1,0 +1,7 @@
+digraph "packages_myproject" {
+charset="utf-8"
+rankdir=BT
+"0" [label="C:\Users\student\Desktop\py3interm\EXAMPLES\animal.py", shape="box"];
+"1" [label="C:\Users\student\Desktop\py3interm\EXAMPLES\insect.py", shape="box"];
+"2" [label="C:\Users\student\Desktop\py3interm\EXAMPLES\mammal.py", shape="box"];
+}

@@ -1,0 +1,16 @@
+root 2021-04-08 13:39:35,377 INFO this is information
+root 2021-04-08 13:39:35,377 WARNING this is a warning
+root 2021-04-08 13:39:35,377 INFO this is information
+root 2021-04-08 13:39:35,377 CRITICAL this is critical
+root 2021-04-08 13:39:38,687 INFO this is information
+root 2021-04-08 13:39:38,687 WARNING this is a warning
+root 2021-04-08 13:39:38,687 INFO this is information
+root 2021-04-08 13:39:38,687 CRITICAL this is critical
+root 2021-04-08 13:40:49,937 INFO this is information logging_formatted.py 11
+root 2021-04-08 13:40:49,937 WARNING this is a warning logging_formatted.py 12
+root 2021-04-08 13:40:49,937 INFO this is information logging_formatted.py 13
+root 2021-04-08 13:40:49,937 CRITICAL this is critical logging_formatted.py 14
+root 2021-04-08 13:40:51,734 INFO this is information logging_formatted.py 11
+root 2021-04-08 13:40:51,734 WARNING this is a warning logging_formatted.py 12
+root 2021-04-08 13:40:51,734 INFO this is information logging_formatted.py 13
+root 2021-04-08 13:40:51,734 CRITICAL this is critical logging_formatted.py 14

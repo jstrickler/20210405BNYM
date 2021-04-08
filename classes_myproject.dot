@@ -1,0 +1,7 @@
+digraph "classes_myproject" {
+charset="utf-8"
+rankdir=BT
+"0" [label="{Animal|name\lspecies\l|kill(cls)\lmake_sound()\lremove(cls)\lzoo_size(cls)\l}", shape="record"];
+"1" [label="{Insect|can_fly\l|}", shape="record"];
+"2" [label="{Mammal|gestation\l|}", shape="record"];
+}

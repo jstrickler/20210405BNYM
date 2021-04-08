@@ -3,7 +3,7 @@ import sys
 import logging
 import logging.handlers
 
-logger = logging.getLogger('ThisApplication')  # <1>
+logger = logging.getLogger(__name__)  # <1>
 logger.setLevel(logging.DEBUG)  # <2>
 
 if sys.platform == 'win32':

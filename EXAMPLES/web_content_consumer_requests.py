@@ -13,7 +13,9 @@ def main(args):
 
     response = requests.get(
         BASE_URL + args[0],
-        params={'key': API_KEY},
+        # auth=('username', 'p@$$w0rd'),
+        # proxies={'http': '...', ...},
+        params={'key': API_KEY},  # GET params; ?key=API
     )  # <3>
 
     if response.status_code == requests.codes.OK:
