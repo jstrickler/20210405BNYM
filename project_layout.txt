@@ -1,0 +1,29 @@
+
+myproject
+---------
+     package1
+         module1.py
+         module2.py
+     package2
+         module3.py
+         module4.py
+         package3
+             module5.py
+             module6.py
+     tests
+         test1.py
+         test2.py
+
+     docs
+         ...
+
+     data
+         ...
+
+cli interface
+-------------
+     mymainscript.py
+
+gui interface
+-------------
+     mymainguiscript.py

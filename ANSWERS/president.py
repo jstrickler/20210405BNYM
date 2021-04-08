@@ -3,7 +3,12 @@ from datetime import date
 
 class President():
     def __init__(self, index):
-        self._get_data(index)
+        try:
+            int_index = int(index)
+        except (TypeError, ValueError) as err:
+            raise err
+        else:
+            self._get_data(int_index)
 
     @staticmethod
     def _mkdate(raw_date):
@@ -22,6 +27,7 @@ class President():
         with open("DATA/presidents.txt") as pfile:
             for line in pfile:
                 flds = line.rstrip().split(":")
+
                 if int(flds[0]) == int(index):
                     self._term = index
                     self._lname = flds[1]

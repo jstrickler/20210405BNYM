@@ -8,6 +8,9 @@ def test_one():  # <1>
 def test_two(common_fixture):   # <2>
     assert(common_fixture == "DATA")
 
+def test_animal(animal):
+    assert animal == 'wombat'
+
 if __name__ == '__main__':
     pytest.main([__file__, "-s"])   # <3>
 

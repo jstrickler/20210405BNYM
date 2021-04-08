@@ -21,3 +21,17 @@ def test_first_name(person):  # <4>
 def test_last_name(person):  # <4>
     assert person.last_name == LAST_NAME
 
+@pytest.fixture
+def expected():
+    return 4
+
+@pytest.fixture
+def animal():
+    return 'wombat'
+
+def test_two_plus_two_is_four(expected, animal):
+    assert 2 + 2 == expected
+    assert animal == 'wombat'
+
+
+

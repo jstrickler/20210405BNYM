@@ -5,11 +5,10 @@ from unittest.mock import Mock
 
 ham = Mock()  # <1>
 
-
 # system under test
 class Spam():  # <2>
     def __init__(self, param):
-        self._value = ham(param)  # <3>
+        self._value = ham(param)
 
     @property
     def value(self):  # <4>
